@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title> - jsFiddle demo</title>
+  
+  <script type='text/javascript' src='/js/lib/dummy.js'></script>
+  <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+  
+  
+  <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  
+  <style type='text/css'>
+    #circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+}
+#circle2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+}
+#circle3 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+}
+#circle4 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+}
+#circle5 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+}
+#circle6 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+}
+#circle7 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: fixed;
+}
+#circle8 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: fixed;
+}
+#circle9 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: fixed;
+}
+#circle10 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: fixed;
+}
+#circle11 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: fixed;
+}
+#circle12 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: fixed;
+}
+#rec1 {
+    width: 100px;
+    height: 500px;
+    background-color: #c6dd8f;
+    position: fixed;
+}
+#rec2 {
+    width: 100px;
+    height: 500px;
+    margin-left: 100px;
+    background-color: #e6edd4;
+    position: fixed;
+}
+#rec3 {
+    width: 100px;
+    height: 500px;
+    margin-left: 200px;
+    background-color: #efe86f;
+    position: fixed;
+}
+#rec4 {
+    width: 100px;
+    height: 500px;
+    margin-left: 300px;
+    background-color: #dae8b6;
+    position: fixed;
+}
+#rec5 {
+    width: 100px;
+    height: 500px;
+    margin-left: 400px;
+    background-color: #f7daaa;
+    position: fixed;
+}
+#rec6 {
+    width: 100px;
+    height: 500px;
+    margin-left: 500px;
+    background-color: #b0cdfc;
+    position: fixed;
+}
+#rec7 {
+    width: 100px;
+    height: 500px;
+    margin-left: 600px;
+    background-color: #f4c87c;
+    position: fixed;
+}
+  </style>
+  
+</head>
+<body>
+  <div id="rec1"></div>
+<div id="rec2"></div>
+<div id="rec3"></div>
+<div id="rec4"></div>
+<div id="rec5"></div>
+<div id="rec6"></div>
+<div id="rec7"></div>
+<div id="circle"></div>
+<div id="circle2"></div>
+<div id="circle3"></div>
+<div id="circle4"></div>
+<div id="circle5"></div>
+<div id="circle6"></div>
+<div id="circle7"></div>
+<div id="circle8"></div>
+<div id="circle9"></div>
+<div id="circle10"></div>
+<div id="circle11"></div>
+<div id="circle12"></div>
+  
+
+
+<script type='text/javascript'>//<![CDATA[ 
+
+var circle = document.getElementById("circle");
+var circle2 = document.getElementById("circle2");
+var circle3 = document.getElementById("circle3");
+var circle4 = document.getElementById("circle4");
+var circle5 = document.getElementById("circle5");
+var circle6 = document.getElementById("circle6");
+var circle7 = document.getElementById("circle6");
+var circle8 = document.getElementById("circle6");
+var circle9 = document.getElementById("circle6");
+var circle10 = document.getElementById("circle6");
+var circle11 = document.getElementById("circle6");
+var circle12 = document.getElementById("circle6");
+
+var xPos = 0;
+var yPos = 100;
+
+var xPos2 = 700;
+var yPos2 = 300;
+
+function update() {
+    xPos = xPos + 10;
+    xPos2 = xPos2 - 10;
+
+    if (xPos > 0 && xPos < 80) {
+        circle.style.marginLeft = xPos + "px";
+        circle.style.marginTop = yPos + "px";
+        circle.style.backgroundColor = "#c6dd8f";
+    }
+
+    if (xPos > 120 && xPos < 180) {
+        circle2.style.marginLeft = xPos + "px";
+        circle2.style.marginTop = yPos + "px";
+        circle2.style.backgroundColor = "#e6edd4";
+    }
+
+    if (xPos > 220 && xPos < 280) {
+        circle3.style.marginLeft = xPos + "px";
+        circle3.style.marginTop = yPos + "px";
+        circle3.style.backgroundColor = "#efe86f";
+    }
+    if (xPos > 320 && xPos < 380) {
+        circle4.style.marginLeft = xPos + "px";
+        circle4.style.marginTop = yPos + "px";
+        circle4.style.backgroundColor = "#dae8b6";
+    }
+
+    if (xPos > 420 && xPos < 480) {
+        circle5.style.marginLeft = xPos + "px";
+        circle5.style.marginTop = yPos + "px";
+        circle5.style.backgroundColor = "#f7daaa";
+    }
+
+    if (xPos > 520 && xPos < 580) {
+        circle6.style.marginLeft = xPos + "px";
+        circle6.style.marginTop = yPos + "px";
+        circle6.style.backgroundColor = "#b0cdfc";
+    }
+
+
+    //circles right to left direction
+
+    //    if ( xPos2 < 730  && xPos2 > 570 ){
+    //        circle7.style.marginLeft = xPos2 + "px";
+    //       circle7.style.marginTop = yPos2 + "px";
+    //      circle7.style.backgroundColor = "#f4c87c";
+    //     }
+
+    //    if (xPos2 > 470 && xPos2 < 550){
+    //        circle8.style.marginLeft = xPos2 + "px";
+    //        circle8.style.marginTop = yPos2 + "px";
+    //        circle8.style.backgroundColor = "#b0cdfc";
+    //     }
+
+    //    if (xPos2 > 370 && xPos2 < 450){
+    //        circle9.style.marginLeft = xPos2 + "px";
+    //        circle9.style.marginTop = yPos2 + "px";
+    //        circle9.style.backgroundColor = "#f7daaa";
+    //     }   
+
+    //    if (xPos2 > 270 && xPos2 < 350){
+    //        circle10.style.marginLeft = xPos2 + "px";
+    //        circle10.style.marginTop = yPos2 + "px";
+    //        circle10.style.backgroundColor = "#dae8b6";
+    //     }   
+
+    //    if (xPos2 > 170 && xPos2 < 250){
+    //        circle11.style.marginLeft = xPos2 + "px";
+    //        circle11.style.marginTop = yPos2 + "px";
+    //        circle11.style.backgroundColor = "#efe86f";
+    //     }  
+
+    //    if (xPos2 > 70 && xPos2 < 150){
+    //        circle12.style.marginLeft = xPos2 + "px";
+    //        circle12.style.marginTop = yPos2 + "px";
+    //        circle12.style.backgroundColor = "#e6edd4";
+    //     }  
+
+}
+
+setInterval(update, 1000 / 30);
+//]]>  
+
+</script>
+
+
+</body>
+
+
+</html>
+
